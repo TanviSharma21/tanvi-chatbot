@@ -1,156 +1,108 @@
-### ✅ `tanvi-chatbot-frontend/README.md`
+# 💬✨ TANVI CHATBOT
 
-```markdown
-# 💬 Tanvi AI Chatbot – Frontend
-
-A sleek, responsive AI Chatbot frontend built using **Next.js (App Router)** and **Tailwind CSS**. This interface allows users to interact with an AI assistant and track their chat history, delivering a clean and intuitive user experience.
+A smart, Java-powered chatbot with a modern React frontend and Spring Boot backend. This project enables seamless user interaction through a web-based interface and a scalable backend service.
 
 ---
 
-## 🌐 Live Demo
+## 🗂️ Project Structure
 
-- 🔗 **Frontend**: [https://tanvi-chatbot.vercel.app](https://tanvi-chatbot.vercel.app)
-- 🔗 **Chat History Page**: [https://tanvi-chatbot.vercel.app/history](https://tanvi-chatbot.vercel.app/history)
-- 🔗 **Backend**: Integrated with Spring Boot API
+```
+
+tanvi-chatbot/
+├── backend/           # Spring Boot backend (Java)
+├── frontend/          # React frontend
+├── public/            # Screenshots and static assets
+│   ├── ss1.png
+│   └── ss2.png
+├── README.md
+└── ...
+
+````
+
+---
+
+## 🚀 Features
+
+- 🤖 Chat interface for simple user interaction  
+- ⚙️ Java Spring Boot API integration  
+- 🎨 React.js frontend for clean UI  
+- 🔁 Frontend–backend communication via REST API  
+- 📂 Organized, modular codebase for easy scalability  
 
 ---
 
 ## 📸 Screenshots
 
-| Chat UI                     | Chat History UI              |
-|----------------------------|------------------------------|
-| ![Chat UI](./public/ss1.png) | ![Chat History](./public/ss2.png) |
+### 🧠 Chatbot Interface
 
----
+![Chat UI](public/ss1.png)
 
-## 🔥 Features
+### 🔧 Backend API Running
 
-- 💬 Chat interface using React + Next.js
-- 🧠 AI-powered answers via backend API
-- 📚 View full chat history from localStorage
-- 🎨 Tailwind CSS for clean, responsive UI
-- 🚀 Deployed on Vercel
+![Backend Running](public/ss2.png)
+
+> 📌 *Ensure the images (`ss1.png`, `ss2.png`) are located in the `/public` folder and pushed to your GitHub repository.*
 
 ---
 
 ## 🛠️ Tech Stack
 
-- Next.js 14 (App Router)
-- React.js
-- Tailwind CSS
-- TypeScript
-- Zustand or `localStorage`
-- Heroicons
+| Layer     | Technology         |
+|-----------|--------------------|
+| Frontend  | React.js, CSS/Tailwind CSS |
+| Backend   | Java, Spring Boot  |
+| API       | RESTful services   |
+| Build Tool | Maven (Java), npm (React) |
+| Others    | Git, GitHub        |
 
 ---
 
-## 📁 Folder Structure
+## 🧪 Getting Started
 
-```
-
-tanvi-chatbot-frontend/
-├── public/
-│   ├── ss1.png                # Chat UI screenshot
-│   └── ss2.png                # History UI screenshot
-│
-└── src/
-├── app/
-│   ├── page.tsx           # Main Chat UI
-│   └── history/
-│       └── page.tsx       # Chat History UI
-│
-└── components/
-├── ChatBox.tsx
-├── Sidebar.tsx
-├── Header.tsx
-└── MessageBubble.tsx
-
-````
-
----
-
-## 🚀 Getting Started (Local Setup)
-
-### 🔧 Prerequisites
-
-- Node.js ≥ 18
-- npm or yarn installed
-
-### 📥 Installation
+### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/TanviSharma21/tanvi-chatbot-frontend.git
-cd tanvi-chatbot-frontend
-npm install
-npm run dev
+git clone https://github.com/your-username/tanvi-chatbot.git
+cd tanvi-chatbot
 ````
 
-Visit [http://localhost:3000](http://localhost:3000) in your browser.
+### 2️⃣ Run Backend (Spring Boot)
 
----
-
-## 🌐 Deploying on Vercel
-
-1. Push the repo to GitHub
-2. Go to [vercel.com](https://vercel.com) and import the project
-3. Add this Environment Variable:
-
-```env
-NEXT_PUBLIC_BACKEND_URL=https://your-backend-url/api/chat/send
+```bash
+cd backend
+./mvnw spring-boot:run
 ```
 
-4. Deploy 🚀
+### 3️⃣ Run Frontend (React)
 
----
-
-## ✅ Post Deployment Checklist
-
-| Checkpoint      | Description                   |
-| --------------- | ----------------------------- |
-| `/`             | Chat interface functional     |
-| `/history`      | Chat history shown properly   |
-| API Integration | Real AI response from backend |
-| Responsive UI   | Works on mobile and desktop   |
-
----
-
-## 🔁 Backend Integration
-
-* Backend is built in Spring Boot
-* Frontend expects this endpoint:
-
-```
-POST https://your-backend-url/api/chat/send
-Body: {
-  message: "Hello"
-}
+```bash
+cd frontend
+npm install
+npm start
 ```
 
-* Returns AI-generated response
-
-> Add this backend URL in `.env`:
->
-> ```bash
-> NEXT_PUBLIC_BACKEND_URL=https://your-backend-url/api/chat/send
-> ```
+Then open your browser at:
+🌐 `http://localhost:3000`
 
 ---
 
-## 👩‍💻 Author
+## 🙋‍♀️ About Me
 
 **Tanvi Sharma**
-🔗 [GitHub](https://github.com/TanviSharma21)
-🔗 [LinkedIn](https://www.linkedin.com/in/tanvi-sharma-b36313212)
+🎓 Developer | Backend in Java | Frontend in React
+🔗 [LinkedIn](https://www.linkedin.com/in/tanvi-sharma-b36313212/)
+📧 Email: *[your.email@example.com](mailto:your.email@example.com)*
 
 ---
 
 ## 📄 License
 
-MIT License © 2025 Tanvi Sharma
-
-```
+This project is licensed under the **MIT License**.
+Feel free to use, modify, and share with attribution.
 
 ---
 
-Let me know if you want the **backend `README.md`** now too – I’ll tailor it the same way.
-```
+````
+
+
+
